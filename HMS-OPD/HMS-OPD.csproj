@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BFE743D-B4A3-4578-93A1-346D1E4AC1EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HMS_OPD</RootNamespace>
+    <AssemblyName>HMS-OPD</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adduser.Designer.cs">
+      <DependentUpon>adduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Delete_Appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Delete_Appointment.Designer.cs">
+      <DependentUpon>Add_Delete_Appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Delete_Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Delete_Doctor.Designer.cs">
+      <DependentUpon>Add_Delete_Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Delete_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Delete_Patient.Designer.cs">
+      <DependentUpon>Add_Delete_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointment_search.Designer.cs">
+      <DependentUpon>Appointment_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClsAppointment.cs" />
+    <Compile Include="LoginPaswordReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPaswordReset.Designer.cs">
+      <DependentUpon>LoginPaswordReset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usersearch.cs" />
+    <Compile Include="ClsDoc.cs" />
+    <Compile Include="ClsPatient.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="Doctor_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_search.Designer.cs">
+      <DependentUpon>Doctor_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_search.Designer.cs">
+      <DependentUpon>Patient_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="adduser.resx">
+      <DependentUpon>adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Delete_Appointment.resx">
+      <DependentUpon>Add_Delete_Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Delete_Doctor.resx">
+      <DependentUpon>Add_Delete_Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Delete_Patient.resx">
+      <DependentUpon>Add_Delete_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointment_search.resx">
+      <DependentUpon>Appointment_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_search.resx">
+      <DependentUpon>Doctor_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPaswordReset.resx">
+      <DependentUpon>LoginPaswordReset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_search.resx">
+      <DependentUpon>Patient_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background powerpoint medical stethoscope.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-Male-User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forbidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
